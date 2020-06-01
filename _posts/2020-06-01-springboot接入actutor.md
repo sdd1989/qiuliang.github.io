@@ -3,7 +3,7 @@ layout: post
 title:  "springboot 接入actuator"
 date:   2020-04-08 17:19:00 +0800-- 
 ---
-##引入pom
+## 引入pom
 ```xml
 <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -18,7 +18,7 @@ date:   2020-04-08 17:19:00 +0800--
       <artifactId>spring-boot-starter-security</artifactId>
 </dependency>
 ```
-##修改yaml
+## 修改yaml
 
 建议先禁用所有的endpoint,然后再按需打开需要的endpoint
 ```yaml
@@ -49,9 +49,9 @@ management:
     threaddump:
       enabled: true
 ```
-##使用例子
+## 使用例子
 
-###1、动态修改日志级别
+### 1、动态修改日志级别
 ```shell script
 curl 'http://localhost:18899/management/loggers/ROOT' -i -X POST \
     -H 'Content-Type: application/json' \
@@ -99,7 +99,7 @@ curl 'http://localhost:18899/management/loggers/ROOT' -i -X POST \
 ```
 修改ROOT日志级别为debug
 
-###2、线程dump
+### 2、线程dump
 ```shell script
 curl 'http://localhost:8080/actuator/threaddump' -i -X GET \
     -H 'Accept: application/json'
@@ -345,7 +345,7 @@ Content-Length: 7535
   } ]
 }
 ```
-###3、堆dump(谨慎使用)
+### 3、堆dump(谨慎使用)
 ```shell script
 curl 'http://localhost:18899/management/heapdump' -O
 ```

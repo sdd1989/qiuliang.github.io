@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "springboot 接入actuator"
-date:   2020-04-08 17:19:00 +0800-- 
+date:   2020-06-01 17:19:00 +0800-- 
 ---
 ## 引入pom
 ```xml
@@ -105,6 +105,7 @@ curl 'http://localhost:8080/actuator/threaddump' -i -X GET \
     -H 'Accept: application/json'
 ```
 返回结果
+
 ```shell script
 HTTP/1.1 200 OK
 Content-Type: application/json

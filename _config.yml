@@ -1,55 +1,80 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: sdd
+subtitle: [ sdd]
+keywords: 一个程序员
+description:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "sdd1989.github.io" # 你的域名
+page_no_title: "sdd's blog" # 文章无标题时默认显示内容
+beian: # "备案号"
+author: sdd
+email: qiuliang_2014@126.com
 
 # Build settings
-theme: minima
+permalink: /:year/:month/:day/:title/
+exclude: ["README.md"]
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
+  - jemoji
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+# always get github's error email saying redcarpet is not supported,
+# so change it to kramdown.
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+
+# Pageinate settings
+paginate: 8 # 分页大小
+paginate_path: "page/:num/"
+
+# Search settings
+baidu_search: true
+google_search: # true
+
+# Menu settings
+menu:
+  - page: 首页
+    directory: .
+    icon: icon-home
+  - page: 关于
+    directory: about/
+    icon: icon-about
+
+# Link settings
+links: # 友情链接
+
+  - title: ccslience's blog
+    url: http://ccslience.oukohou.wang/
+  - title: sdd's github
+    url: https://github.com/sdd1989
+#  - title:
+#    url: http://jekyllcn.com/
+  - title: Jekyll blog system
+    url: http://jekyllcn.com/
+
+
+# Google Analytics
+ga_track_id: 'UA-130856615-1'            # Format: UA-xxxxxx-xx
+ga_domain:  auto            # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+# Code hub settings
+codehub: # 代码仓库
+  - title: Github
+    url: https://github.com/sdd1989
+
+#评论相关 todo:这里需要改appid，appkey
+valine:
+  enable: true
+  app_id:  K1rbn2Oo0YMM04VuzdLS7Nzz-gzGzoHsz
+  app_key: AAsHbwVm8ofKFJ6ghGqqrXSU
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  visitor: true
+  avatar: retro
+  placeholder: say something~~\n - 昵称 为你所要显示的评论的ID；\n - 邮箱 只有后台可见，仅供讨论过程中是否需要交流邮件而设置，请放心填写;\n - 网址 为你的评论的昵称的超链接。\n当然，以上都可以不写，评论依然会显示……
+  guest_info: nick,mail,link
+  pageSize: 10

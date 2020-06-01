@@ -1,0 +1,395 @@
+<!--又在偷看源码啦？
+Congratulations！
+You've just open a treasure!
+Yet no award for you……
+
+-->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <!--Google Adsense, details at: "https://www.google.com/adsense/new/u/0/pub-3980406043325966/home" -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3980406043325966",
+            enable_page_level_ads: true
+        });
+    </script>
+
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130856615-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130856615-1');
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PW3MXPD');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+
+    <title>量子纠缠：invisible man | sdd</title>
+
+    <!--live2d function-->
+    <script src="/assets/live2dw/lib/L2Dwidget.min.js"></script>
+    <script>L2Dwidget.init({
+        "pluginRootPath": "live2dw/",
+        "pluginJsPath": "lib/",
+        "pluginModelPath": "assets/",
+        "tagMode": false,
+        "debug": false,
+        "model": {"jsonPath": "/assets/live2dw/assets/unitychan.model.json"},
+        "display": {"position": "right", "width": 130, "height": 180, "hOffset": 60, "vOffset": -10,},
+        "mobile": {"show": true, "scale": 1,},
+        "log": false
+    });</script>
+
+
+    <meta name="keywords"
+          content="一个程序员">
+    <meta name="description"
+          content="源代码：  百度aistudio notebook：量子纠缠：invisible man  知乎链接：量子纠缠：invisible man">
+    <meta name="baidu-site-verification" content="fjE6fa4d3J"/>
+    <meta name="author" content="sdd">
+
+    <link rel="Shortcut Icon" type="image/x-icon" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+    <link rel="alternate" type="application/rss+xml" title="sdd" href="
+    /feed.xml">
+
+    <link rel="stylesheet" type="text/css" href="
+    /assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="
+    /assets/css/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="
+    /assets/css/grids-responsive-min.css">
+    <link rel="stylesheet" type="text/css" href="
+    /assets/css/style.css?v=1514870841">
+
+    <!--use mathJax to edit formulas in LaTex grammar.-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+              inlineMath: [['$','$']]
+            }
+          });
+
+
+
+
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/tongji.baidu.js"></script>
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW3MXPD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="body_container">
+    <div id="header">
+        <div class="site-name">
+            <h1 class="hidden">量子纠缠：invisible man</h1>
+            <a id="logo" href="/.">sdd</a>
+            <p class="description">sdd，幸会。</p>
+        </div>
+        <div id="nav-menu">
+            
+            <a href="/."><i class="icon-home"> 首页</i></a>
+            
+            <a href="/about/"><i class="icon-about"> 关于</i></a>
+            
+        </div>
+        <script type="text/javascript">
+            var menus = document.getElementById('nav-menu');
+            var ishome = true;
+            for (var i = 1; i < menus.childElementCount; i++) {
+                var path = location.href;
+                var current = path.startsWith(menus.children[i].href);
+                if (current) {
+                    menus.children[i].className = 'current';
+                    ishome = false;
+                    break;
+                }
+            }
+            if (ishome) {
+                menus.children[0].className = 'current';
+            }
+        </script>
+    </div>
+
+    <div id="layout" class="pure-g">
+        <div class="pure-u-1 pure-u-md-3-4">
+            <div class="content_container">
+                <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">量子纠缠：invisible man</h1>
+        <p class="post-meta">
+            <time datetime="2020-04-07T20:07:21+08:00" itemprop="datePublished">
+                <i class="icon-post-date">Apr 7, 2020</i>
+            </time>
+             |
+            <span class="post-category">
+            <i class="icon-post-category">
+            
+                <a href="/category/#技术">技术</a>
+            
+            </i>
+        </span>   |
+            <span class="post-tag">
+            <i class="icon-post-tag">
+            
+                <a href="/tags/#paddlepaddle">paddlepaddle</a>
+            
+                <a href="/tags/#实例分割">实例分割</a>
+            
+            </i>
+        </span>
+
+
+            <!-- 阅读量统计， id 将作为查询条件 -->
+            <span id=/2020/04/07/InvisibleMan/ class="leancloud-visitors" data-flag-title=量子纠缠：invisible man>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-text">阅读量 </span>
+                <span class="leancloud-visitors-count"></span>
+            </span>
+        </p>
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+        <p>源代码：</p>
+<ul>
+  <li>百度aistudio notebook：<a href="https://aistudio.baidu.com/aistudio/projectdetail/383779">量子纠缠：invisible man</a></li>
+  <li>知乎链接：<a href="https://zhuanlan.zhihu.com/p/126713763">量子纠缠：invisible man</a></li>
+</ul>
+
+<p>废话不多说，效果视频如下：</p>
+<iframe src="//player.bilibili.com/player.html?aid=882716475&amp;bvid=BV12K4y1r7op&amp;cid=175226086&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p>然后是一一剖析：以上是在装逼[捂脸]</p>
+
+<p>哈哈，客官勿怪哈，其实是闲来无聊，下班回来体验了下百度paddlepaddle新出的人体抠图功能模块。。。。</p>
+
+<p>说是人体抠图，据我朴素的推测，应该就是deeplabv3+的实例分割功能，在其基础上进行了一些针对人体的定制化抠图功能吧~~</p>
+
+<p>当然，个人推测而已哈~~</p>
+
+<p>下面上代码哈：</p>
+
+<p>首先是一些环境配置：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">paddlehub</span><span class="o">==</span><span class="mf">1.6</span><span class="p">.</span><span class="mi">0</span> <span class="o">-</span><span class="n">i</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">pypi</span><span class="p">.</span><span class="n">tuna</span><span class="p">.</span><span class="n">tsinghua</span><span class="p">.</span><span class="n">edu</span><span class="p">.</span><span class="n">cn</span><span class="o">/</span><span class="n">simple</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="n">mpimg</span> 
+</code></pre></div></div>
+<p>然后导入paddlepaddle预训练好的实例分割模块：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">paddlehub</span> <span class="k">as</span> <span class="n">hub</span>
+<span class="n">module</span> <span class="o">=</span> <span class="n">hub</span><span class="p">.</span><span class="n">Module</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"deeplabv3p_xception65_humanseg"</span><span class="p">)</span>
+</code></pre></div></div>
+<p>将预先下载好的视频提取成图片并保存：（这里我本来想直接从视频流读图喂到模型里的，省去中间的保存环节，无奈官方示例给的是TensorFlow类似的input_dict形式，只好先保存了~~）</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># video 2 images
+</span><span class="k">def</span> <span class="nf">extract_images</span><span class="p">(</span><span class="n">src_video_</span><span class="p">,</span> <span class="n">dst_dir_</span><span class="p">):</span> 
+    <span class="n">video_</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="n">src_video_</span><span class="p">)</span> 
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span> 
+ <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> 
+        <span class="n">flag</span><span class="p">,</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">video_</span><span class="p">.</span><span class="n">read</span><span class="p">()</span> 
+ <span class="k">if</span> <span class="ow">not</span> <span class="n">flag</span><span class="p">:</span> 
+ <span class="k">break</span> 
+        <span class="n">cv2</span><span class="p">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">dst_dir_</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">'.png'</span><span class="p">),</span> <span class="n">frame</span><span class="p">)</span> 
+        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span> 
+ <span class="k">print</span><span class="p">(</span><span class="s">'extracted {} frames in total.'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">count</span><span class="p">))</span>
+
+<span class="n">src_video</span> <span class="o">=</span> <span class="s">'work/humanSeg/gameForPeace/Cap2cap.mp4'</span>
+<span class="n">dst_dir_</span> <span class="o">=</span> <span class="s">'work/humanSeg/Marvel'</span>
+<span class="n">extract_images</span><span class="p">(</span><span class="n">src_video</span><span class="p">,</span> <span class="n">dst_dir_</span><span class="p">)</span>
+</code></pre></div></div>
+<p>ok，模型有了，输入有了，现在我们开始进行“人体抠图”：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># test images
+</span><span class="n">test_image_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="s">'work/humanSeg/Marvel'</span><span class="p">,</span> <span class="s">"{}.png"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">image_index</span><span class="p">))</span> <span class="k">for</span> <span class="n">image_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">500</span><span class="p">)]</span>
+
+<span class="c1"># segment images!
+</span><span class="n">input_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s">"image"</span><span class="p">:</span> <span class="n">test_image_list</span><span class="p">}</span>
+<span class="n">module</span><span class="p">.</span><span class="n">segmentation</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">input_dict</span><span class="p">)</span>
+</code></pre></div></div>
+<p>好了，抠出了人体图，现在我们仿照官方代码，找张背景图进行混合，我就随便找了张大海的背景图了：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="k">def</span> <span class="nf">blend_images</span><span class="p">(</span><span class="n">fore_image_path</span><span class="p">,</span> <span class="n">base_image</span><span class="p">,</span> <span class="n">save_dir_</span><span class="p">):</span>
+    <span class="s">"""
+    将抠出的人物图像换背景
+    fore_image: 前景图片，抠出的人物图片
+    base_image: 背景图片
+    save_dir_: 保存路径
+    """</span>
+    <span class="c1"># 读入图片
+</span>    <span class="n">base_image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">base_image</span><span class="p">).</span><span class="n">convert</span><span class="p">(</span><span class="s">'RGB'</span><span class="p">)</span>
+    <span class="n">fore_image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">fore_image_path</span><span class="p">).</span><span class="n">resize</span><span class="p">(</span><span class="n">base_image</span><span class="p">.</span><span class="n">size</span><span class="p">)</span>
+
+    <span class="c1"># 图片加权合成
+</span>    <span class="n">scope_map</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">fore_image</span><span class="p">)[:,:,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="mi">255</span>
+    <span class="n">scope_map</span> <span class="o">=</span> <span class="n">scope_map</span><span class="p">[:,:,</span><span class="n">np</span><span class="p">.</span><span class="n">newaxis</span><span class="p">]</span>
+    <span class="n">scope_map</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">scope_map</span><span class="p">,</span> <span class="n">repeats</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">res_image</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">scope_map</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">fore_image</span><span class="p">)[:,:,:</span><span class="mi">3</span><span class="p">])</span> <span class="o">+</span> <span class="n">np</span><span class="p">.</span><span class="n">multiply</span><span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">scope_map</span><span class="p">),</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">(</span><span class="n">base_image</span><span class="p">))</span>
+    
+    <span class="c1">#保存图片
+</span>    <span class="n">res_image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">(</span><span class="n">res_image</span><span class="p">))</span>
+    <span class="n">save_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">save_dir_</span><span class="p">,</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">basename</span><span class="p">(</span><span class="n">fore_image_path</span><span class="p">))</span>
+    <span class="n">res_image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">save_path</span><span class="p">)</span>
+
+<span class="c1"># blend images
+</span><span class="n">save_dir</span> <span class="o">=</span> <span class="s">'work/humanSeg/MarvelBlended'</span>
+<span class="n">base_image</span> <span class="o">=</span> <span class="s">'work/humanSeg/resized_1000.png'</span>
+<span class="k">for</span> <span class="n">index_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">500</span><span class="p">):</span>
+    <span class="n">fore_image</span> <span class="o">=</span> <span class="s">'humanseg_output/{}.png'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">index_</span><span class="p">)</span>
+    <span class="n">blend_images</span><span class="p">(</span><span class="n">fore_image</span><span class="p">,</span> <span class="n">base_image</span><span class="p">,</span> <span class="n">save_dir</span><span class="p">)</span>
+</code></pre></div></div>
+<p>ok，抠出的人体图和背景融合后，我们再用opencv把这些图片写成视频并保存：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># image2video
+</span><span class="n">dst_video_</span> <span class="o">=</span> <span class="s">'work/humanSeg/marvel_ocean500.avi'</span>
+<span class="n">dst_video_</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter</span><span class="p">(</span><span class="n">dst_video_</span><span class="p">,</span> <span class="n">cv2</span><span class="p">.</span><span class="n">VideoWriter_fourcc</span><span class="p">(</span><span class="o">*</span><span class="s">'XVID'</span><span class="p">),</span> <span class="mi">25</span><span class="p">,</span> <span class="p">(</span><span class="mi">1920</span><span class="p">,</span> <span class="mi">1080</span><span class="p">),</span> <span class="bp">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">image2video</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">index_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">500</span><span class="p">):</span>
+        <span class="n">frame</span> <span class="o">=</span> <span class="n">cv2</span><span class="p">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'work/humanSeg/MarvelBlended/{}.png'</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">index_</span><span class="p">))</span>
+        <span class="n">dst_video_</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+
+<span class="n">image2video</span><span class="p">()</span>
+</code></pre></div></div>
+<p>好啦，这样我们就完成了开头的那个视频啦~~</p>
+
+<p>然后所谓量子纠缠时隐时现的效果是怎么做到的呢？</p>
+
+<p>哈哈哈，其实是这个分割模型是在真人数据集上训练的，然后Avengers们穿着盔甲就不容易识别出来啦，所以会出现边界不清时隐时现的问题~~~</p>
+
+<p>哈哈哈（逃）</p>
+
+<p>最后，你的赞是我最大的动力！</p>
+
+
+    </div>
+
+
+    <div class="post-nav">
+         
+    </div>
+
+
+    <!--valine comment function-->
+    <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+    <p><br/>既已览卷至此，何不品评一二：</p>
+    <div id="valine_comment" class="fb_comments_container"></div>
+    <script>
+        var notify = 'false' === true;
+        var verify = 'false.>' === true;
+        var visitor = 'true.>' === true;
+
+        new Valine({
+            av: AV,
+            el: '#valine_comment',
+            notify: notify,
+            verify: verify,
+            // smiles_url: '/smiles',
+            visitor: true,
+            app_id: 'K1rbn2Oo0YMM04VuzdLS7Nzz-gzGzoHsz',
+            app_key: 'AAsHbwVm8ofKFJ6ghGqqrXSU',
+            placeholder: 'say something~~\n - 昵称 为你所要显示的评论的ID；\n - 邮箱 只有后台可见，仅供讨论过程中是否需要交流邮件而设置，请放心填写;\n - 网址 为你的评论的昵称的超链接。\n当然，以上都可以不写，评论依然会显示……',
+            avatar: 'retro',
+        });
+    </script>
+
+
+</article>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        Copyright &copy; 2015-<span id="cur_year"></span> <a href="sdd1989.github.io">sdd</a> - All Rights
+        Reserved.
+        Powered by <a href="sdd1989.github.io" target="_blank">sdd1989</a> @ <a
+            href="https://github.com/sdd1989/sdd1989.github.io" target="_blank">Github.com</a>
+        <script type="text/javascript">var cur_date = new Date();
+        document.getElementById("cur_year").innerHTML = cur_date.getFullYear();</script>
+        
+    </div>
+
+    <a id="rocket" href="#top" class="show"></a>
+    <script src="/assets/js/totop.js" type="text/javascript"></script>
+</div>
+
+<!--<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+-->
+
+
+</body>
+
+
+</html>

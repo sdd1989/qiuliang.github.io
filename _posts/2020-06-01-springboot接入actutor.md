@@ -52,13 +52,13 @@ management:
 ## 使用例子
 
 ### 1、动态修改日志级别
-```shell script
+```shell
 curl 'http://localhost:18899/management/loggers/ROOT' -i -X POST \
     -H 'Content-Type: application/json' \
     -d '{"configuredLevel":"debug"}'
 ```
 返回结果
-```shell script
+```shell
 {
     "levels":[
         "OFF",
@@ -100,13 +100,13 @@ curl 'http://localhost:18899/management/loggers/ROOT' -i -X POST \
 修改ROOT日志级别为debug
 
 ### 2、线程dump
-```shell script
+```shell
 curl 'http://localhost:8080/actuator/threaddump' -i -X GET \
     -H 'Accept: application/json'
 ```
 返回结果
 
-```shell script
+```shell
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 7535
@@ -347,7 +347,7 @@ Content-Length: 7535
 }
 ```
 ### 3、堆dump(谨慎使用)
-```shell script
+```shell
 curl 'http://localhost:18899/management/heapdump' -O
 ```
 

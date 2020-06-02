@@ -2,11 +2,11 @@
 
 
 {
-"title": "量子纠缠：invisible man",
-"url": "/2020/04/07/InvisibleMan/",
-"date": "2020-04-07",
-"keywords": ["paddlepaddle","实例分割"],
-"summary": "源代码：\n\n  百度aistudio notebook：量子纠缠：invisible man\n  知乎链接：量子纠缠：invisible man\n\n\n废话不多说，效果视频如下：\n \n\n然后是一一剖析：以上是在装逼[捂脸]\n\n哈哈，客官..."
+"title": "springboot 接入actuator",
+"url": "/2020/06/01/springboot%E6%8E%A5%E5%85%A5actutor/",
+"date": "2020-06-01",
+"keywords": [],
+"summary": "引入pom\n&lt;dependency&gt;\n            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;\n            &lt;artifact..."
 }
 
 ]

@@ -39,6 +39,9 @@ menu:
   - page: 首页
     directory: .
     icon: icon-home
+  - page: 归档
+    directory: archives/
+    icon: icon-archive
   - page: 关于
     directory: about/
     icon: icon-about

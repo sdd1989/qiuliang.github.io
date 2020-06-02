@@ -140,6 +140,8 @@ Yet no award for you……
             
             <a href="/."><i class="icon-home"> 首页</i></a>
             
+            <a href="/archives/"><i class="icon-archive"> 归档</i></a>
+            
             <a href="/about/"><i class="icon-about"> 关于</i></a>
             
         </div>
@@ -554,8 +556,8 @@ Content-Length: 7535
             verify: verify,
             // smiles_url: '/smiles',
             visitor: true,
-            app_id: 'K1rbn2Oo0YMM04VuzdLS7Nzz-gzGzoHsz',
-            app_key: 'AAsHbwVm8ofKFJ6ghGqqrXSU',
+            app_id: 'PQSrHVlqOy6XSSsT4qVq9Lvs-gzGzoHsz',
+            app_key: '6bDObKFTc1S2nVWajONICeKt',
             placeholder: 'say something~~\n - 昵称 为你所要显示的评论的ID；\n - 邮箱 只有后台可见，仅供讨论过程中是否需要交流邮件而设置，请放心填写;\n - 网址 为你的评论的昵称的超链接。\n当然，以上都可以不写，评论依然会显示……',
             avatar: 'retro',
         });
@@ -566,7 +568,109 @@ Content-Length: 7535
 
             </div>
         </div>
+        <div class="pure-u-1-4">
+            <div id="sidebar">
+                <div class="widget">
+    <form id="search-form" class="search-form">
+      <input id="query" type="text" placeholder="Search" class="search-form-input">
+    </form>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    function find_posts(words, posts_data) {
+        var matched_posts = [];
+
+        posts_data.forEach(function(post) {
+            var content = (new Array(post["title"], post["keywords"])).join(" ");
+            words.forEach(function (word) {
+                if (word === null || word === undefined || word == "") {
+                    return;  // continue
+                }
+                var regex = new RegExp(word, 'i');
+                if (content.match(regex) != null) {
+                    matched_posts.push(post);
+                }
+            });
+        });
+
+        return matched_posts;
+    }
+
+    function show_posts(posts) {
+        var html = '';
+        if (posts.length > 0) {
+            for (var i = 0; i < posts.length; i++) {
+                post = posts[i];
+                html += '<div class="post">';
+                html += '<h2 class="post-title">';
+                html += '<a href="' + post.url + '">' + post.title + '</a>';
+                html += '</h2>';
+                html += '<div class="post-meta"><i class="icon-post-date">';
+                html += ' ' + post.date;
+                html += '</i></div>';
+                html += '<div class="post-content">' + post.summary + '</div>';
+                html += '<p class="readmore">';
+                html += '<a href="' + post.url + '">阅读更多</a>';
+                html += '</p>';
+                html += '</div>';
+            }
+        } else {
+            html += "<h4>Whoops,您输入的关键词没有搜索结果，请更换关键词！ O(∩_∩)O~</h4>"
+        }
+        $('.content_container').html(html);
+        $('.content_container').show();
+    }
+
+    $('#search-form').submit(function() {
+        var query = $('#query').val();
+        var words = query.split(" ")
+
+        $('#query').blur().attr('disabled', true);
+        $('.content_container').hide();
+
+        $.ajax({
+            url: "/assets/data/posts.json",
+            dataType: "json",
+            timeout: 6000,  // 6 sec
+            success: function(data) {
+                matched_posts = find_posts(words, data);
+                show_posts(matched_posts);
+            }
+        });
+
+        $('#query').blur().attr('disabled', false);
+
+        return false;
+    });
+});
+</script>
+
+
+                <div class="widget">
+    <div class="widget-title"><i class="icon-edit"> sdd</i></div><ul></ul>
+        我是sdd,来自小米科技。<br>
+
+        幸会。<br><br>
+<td style="text-align: center"><a style="color: slategrey"></a>
+</div>
+
+
+                <div class="widget">
+  <div class="widget-title"><i class="icon-code-hub"> 代码仓库</i></div>
+  <ul class="codehub-list">
+  
+    <li class="codehub-list-item"><a href="https://github.com/sdd1989" title="Github" target="_blank">Github</a></li>
+  
+  </ul>
+</div>
+
+
+            </div>
+        </div>
     </div>
+
+
 
 
     <div id="footer">

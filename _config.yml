@@ -1,6 +1,6 @@
 # Site settings
-title: sdd
-subtitle: [ sdd]
+title: sdd's blog
+subtitle:
 keywords: 一个程序员
 description:
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -134,7 +134,7 @@ Yet no award for you……
         <div class="site-name">
             <h1 class="hidden">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
             <a id="logo" href="/.">{{ site.title }}</a>
-            <p class="description">{{ site.subtitle }}，幸会。</p>
+            <p class="description">{{ site.subtitle }}冰冻三尺，非一日之寒</p>
         </div>
         <div id="nav-menu">
             {% for menu in site.menu %}
@@ -170,6 +170,10 @@ Yet no award for you……
                 {% include widgets/search_box_new %}
 
                 {% include widgets/personlized_signature %}
+
+                {% include widgets/category_list %}
+
+                {% include widgets/tags %}
 
                 {% include widgets/codehub_list %}
 

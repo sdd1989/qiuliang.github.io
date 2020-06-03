@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "springboot 接入actuator"
+tags:   Java
 date:   2020-06-01 17:19:00 +0800-- 
+categories: [后端] 
 ---
 ## 引入pom
 ```xml

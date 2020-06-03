@@ -42,6 +42,9 @@ menu:
   - page: 归档
     directory: archives/
     icon: icon-archive
+  - page: 标签
+    directory: tags/
+    icon: icon-tags
   - page: 关于
     directory: about/
     icon: icon-about

@@ -59,7 +59,7 @@ Yet no award for you……
     <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
 
-    <title>分类 | </title>
+    <title>Markdown 语法 | </title>
 
     <!--live2d function-->
     <script src="/assets/live2dw/lib/L2Dwidget.min.js"></script>
@@ -79,7 +79,7 @@ Yet no award for you……
     <meta name="keywords"
           content="一个程序员">
     <meta name="description"
-          content="">
+          content="0.背景Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。相比WYSIWYG编辑器  优点：          因为是纯文本，所以只要支持Markdown的地方都能获得一样的编辑效果，可以让作者摆脱排版的困扰，专心写作。      操作简单。比如:WYSIWYG编...">
     <meta name="baidu-site-verification" content="fjE6fa4d3J"/>
     <meta name="author" content="sdd">
 
@@ -132,7 +132,7 @@ Yet no award for you……
 <div class="body_container">
     <div id="header">
         <div class="site-name">
-            <h1 class="hidden">分类</h1>
+            <h1 class="hidden">Markdown 语法</h1>
             <a id="logo" href="/.">sdd's blog</a>
             <p class="description">冰冻三尺，非一日之寒</p>
         </div>
@@ -168,38 +168,319 @@ Yet no award for you……
     <div id="layout" class="pure-g">
         <div class="pure-u-1 pure-u-md-3-4">
             <div class="content_container">
-                <div class="category">
-  <h1>文章分类</h1>
+                <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <ul id="categories">
-  
-    <li><a href="/category/#后端">后端(2)</a></li>
-  
-    <li><a href="/category/#工具">工具(1)</a></li>
-  
-  </ul>
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Markdown 语法</h1>
+        <p class="post-meta">
+            <time datetime="2020-06-06T11:21:00+08:00" itemprop="datePublished">
+                <i class="icon-post-date">Jun 6, 2020</i>
+            </time>
+             |
+            <span class="post-category">
+            <i class="icon-post-category">
+            
+                <a href="/category/#工具">工具</a>
+            
+            </i>
+        </span>   |
+            <span class="post-tag">
+            <i class="icon-post-tag">
+            
+                <a href="/tags/#Markdown">Markdown</a>
+            
+            </i>
+        </span>
 
-  <div class="post post-archive">
-  
-  <h3 id="后端">后端</h3>
-  <ul class="arc-list">
-      
-          <li><span class="date">June  2, 2020</span><a href="/2020/06/02/JavaGC/">Java GC日志分析</a></li>
-      
-          <li><span class="date">June  1, 2020</span><a href="/2020/06/01/springboot%E6%8E%A5%E5%85%A5actutor/">springboot 接入actuator</a></li>
-      
-  </ul>
-  
-  <h3 id="工具">工具</h3>
-  <ul class="arc-list">
-      
-          <li><span class="date">June  6, 2020</span><a href="/2020/06/06/markdown/">Markdown 语法</a></li>
-      
-  </ul>
-  
-  </div>
-</div>
 
+            <!-- 阅读量统计， id 将作为查询条件 -->
+            <span id=/2020/06/06/markdown/ class="leancloud-visitors" data-flag-title=Markdown 语法>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-text">阅读量 </span>
+                <span class="leancloud-visitors-count"></span>
+            </span>
+        </p>
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+        <h2 id="0背景">0.背景</h2>
+<p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。
+相比WYSIWYG编辑器</p>
+<ul>
+  <li>优点：
+    <ol>
+      <li>因为是纯文本，所以只要支持Markdown的地方都能获得一样的编辑效果，可以让作者摆脱排版的困扰，专心写作。</li>
+      <li>操作简单。比如:WYSIWYG编辑时标记个标题，先选中内容，再点击导航栏的标题按钮，选择几级标题。要三个步骤。而Markdown只需要在标题内容前加#即可</li>
+    </ol>
+  </li>
+  <li>缺点：
+    <ol>
+      <li>需要记一些语法（当然，是很简单。五分钟学会）。</li>
+      <li>有些平台不支持Markdown编辑模式。
+还好，简书是支持Markdown编辑模式的。</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="1标题">1.标题</h2>
+<p>在想要设置为标题的文字前面加#来表示
+一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p>
+
+<p>注：标准语法一般在#后跟个空格再写文字。</p>
+<ul>
+  <li>示例：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 这是一个一级标题
+## 这是一个二级标题
+### 这是一个三级标题
+</code></pre></div>    </div>
+  </li>
+  <li>效果：
+    <h1 id="这是一级标题">这是一级标题</h1>
+    <h2 id="这是二级标题">这是二级标题</h2>
+    <h3 id="这是三级标题">这是三级标题</h3>
+    <h4 id="这是四级标题">这是四级标题</h4>
+    <h5 id="这是五级标题">这是五级标题</h5>
+    <h6 id="这是六级标题">这是六级标题</h6>
+  </li>
+</ul>
+
+<h2 id="2字体">2.字体</h2>
+<ul>
+  <li>示例：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**这是加粗的文字**
+*这是倾斜的文字*
+***这是斜体加粗的文字***
+~~这是加删除线的文字~~
+</code></pre></div>    </div>
+  </li>
+  <li>效果：
+<strong>这是加粗的文字</strong>
+<em>这是倾斜的文字</em>
+<strong><em>这是斜体加粗的文字</em></strong>
+<del>这是加删除线的文字</del></li>
+</ul>
+
+<h2 id="3引用">3.引用</h2>
+<p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个»三个»&gt;
+n个…
+貌似可以一直加下去，但没神马卵用</p>
+<ul>
+  <li>示例：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;这是引用的内容
+&gt;&gt;这是引用的内容
+&gt;&gt;&gt;这是引用的内容
+</code></pre></div>    </div>
+  </li>
+  <li>效果：
+    <blockquote>
+      <p>这是引用的内容</p>
+      <blockquote>
+        <p>这是引用的内容</p>
+        <blockquote>
+          <p>这是引用的内容</p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="4分割线">4.分割线</h2>
+<p>三个或者三个以上的 - 或者 * 都可以。</p>
+<ul>
+  <li>示例：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--- 
+----
+***
+****
+</code></pre></div>    </div>
+  </li>
+  <li>效果：</li>
+</ul>
+
+<hr />
+
+<h2 id="5图片">5.图片</h2>
+<ul>
+  <li>示例：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![图片alt](图片路径 ''图片title'')
+图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
+图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
+</code></pre></div>    </div>
+  </li>
+  <li>效果：
+<img src="/assets/imgs/test.jpg" alt="图片alt" title="'图片title'" /></li>
+</ul>
+
+<h2 id="6超链接">6.超链接</h2>
+<ul>
+  <li>示例：
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[简书](http://jianshu.com)
+[百度](http://baidu.com)
+title可加可不加
+</code></pre></div>    </div>
+  </li>
+  <li>效果：
+<a href="http://jianshu.com">简书</a>
+<a href="http://baidu.com">百度</a>
+    <h2 id="7列表">7.列表</h2>
+  </li>
+  <li>无序列表
+    <ul>
+      <li>语法：
+ <img src="/assets/imgs/list1.png" alt="图片alt" title="'图片title'" /></li>
+      <li>效果：
+        <ul>
+          <li>这是无序列表</li>
+          <li>这是无序列表</li>
+          <li>这是无序列表</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>有序列表
+    <ul>
+      <li>语法：
+ <img src="/assets/imgs/list2.png" alt="图片alt" title="'图片title'" /></li>
+      <li>
+        <p>效果：</p>
+
+        <ol>
+          <li>列表内容</li>
+          <li>列表内容</li>
+          <li>列表内容
+ 注意：序号跟内容之间要有空格</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>列表嵌套
+上一级和下一级之间敲三个空格即可
+    <ul>
+      <li>语法：
+ <img src="/assets/imgs/list3.png" alt="图片alt" title="'图片title'" /></li>
+      <li>效果：
+        <ul>
+          <li>一级无序列表内容
+            <ul>
+              <li>二级无序列表内容</li>
+              <li>二级无序列表内容</li>
+              <li>二级无序列表内容
+                <h2 id="8表格">8.表格</h2>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>语法：
+<img src="/assets/imgs/table1.png" alt="图片alt" title="'图片title'" /></li>
+  <li>
+    <p>示例：
+<img src="/assets/imgs/table2.png" alt="图片alt" title="'图片title'" /></p>
+  </li>
+  <li>效果：</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>姓名</th>
+      <th style="text-align: center">技能</th>
+      <th style="text-align: right">排行</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>刘备</td>
+      <td style="text-align: center">哭</td>
+      <td style="text-align: right">大哥</td>
+    </tr>
+    <tr>
+      <td>关羽</td>
+      <td style="text-align: center">打</td>
+      <td style="text-align: right">二哥</td>
+    </tr>
+    <tr>
+      <td>张飞</td>
+      <td style="text-align: center">骂</td>
+      <td style="text-align: right">三弟</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="9代码">9.代码</h2>
+<ul>
+  <li>示例：
+<img src="/assets/imgs/code.png" alt="图片alt" title="'图片title'" /></li>
+  <li>效果：
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CMS-concurrent-mark：并发收集阶段，这个阶段会遍历老年代，并标记所有存活的对象
+0.259/0.259 secs：这个阶段的持续时间与时钟时间
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="10流程图">10.流程图</h2>
+<ul>
+  <li>
+    <p>示例：
+<img src="/assets/imgs/flow.png" alt="图片alt" title="'图片title'" /></p>
+  </li>
+  <li>
+    <p>效果：</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">flow
+st=&gt;start: 开始
+op=&gt;operation: My Operation
+cond=&gt;condition: Yes or No?
+e=&gt;end
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+&amp;</code></p>
+
+
+    </div>
+
+
+    <div class="post-nav">
+        
+        <a href="/2020/06/02/JavaGC/" class="pre"><i class="icon-post-pre"> Java GC日志分析</i></a>
+         
+    </div>
+
+
+    <!--valine comment function-->
+    <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+    <p><br/>既已览卷至此，何不品评一二：</p>
+    <div id="valine_comment" class="fb_comments_container"></div>
+    <script>
+        var notify = 'false' === true;
+        var verify = 'false.>' === true;
+        var visitor = 'true.>' === true;
+
+        new Valine({
+            av: AV,
+            el: '#valine_comment',
+            notify: notify,
+            verify: verify,
+            // smiles_url: '/smiles',
+            visitor: true,
+            app_id: 'PQSrHVlqOy6XSSsT4qVq9Lvs-gzGzoHsz',
+            app_key: '6bDObKFTc1S2nVWajONICeKt',
+            placeholder: 'say something~~\n - 昵称 为你所要显示的评论的ID；\n - 邮箱 只有后台可见，仅供讨论过程中是否需要交流邮件而设置，请放心填写;\n - 网址 为你的评论的昵称的超链接。\n当然，以上都可以不写，评论依然会显示……',
+            avatar: 'retro',
+        });
+    </script>
+
+
+</article>
 
             </div>
         </div>

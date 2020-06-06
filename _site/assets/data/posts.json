@@ -2,6 +2,15 @@
 
 
 {
+"title": "Markdown 语法",
+"url": "/2020/06/06/markdown/",
+"date": "2020-06-06",
+"keywords": ["Markdown"],
+"summary": "0.背景\nMarkdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。\n相比WYSIWYG编辑器\n\n  优点：\n    \n      因为是纯文本，所以只要支持Markdown的地方都能获得一样..."
+}, 
+
+
+{
 "title": "Java GC日志分析",
 "url": "/2020/06/02/JavaGC/",
 "date": "2020-06-02",

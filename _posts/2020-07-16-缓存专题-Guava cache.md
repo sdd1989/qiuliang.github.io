@@ -3,11 +3,9 @@ layout: post
 title:  "缓存专题-Guava cache"
 tags:   Java
 date:   2020-07-06 16:30:00 +0800-- 
-categories: [工具] 
+categories: [后端] 
 ---
 # **缓存专题-Guava cache**
-
-[TOC]
 
 ## 1、缓存策略（广义）
 
@@ -475,7 +473,7 @@ LoadingCache<String, String> cache = CacheBuilder.newBuilder()
 - 使用，接口适配Guava cache，可以用guava接口操作
 
   ```XML
-  				<dependency>
+          <dependency>
               <groupId>com.github.ben-manes.caffeine</groupId>
               <artifactId>caffeine</artifactId>
               <version>2.8.5</version>
